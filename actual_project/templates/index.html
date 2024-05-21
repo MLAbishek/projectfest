@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Skin Detector</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <h1>Skin Detector</h1>
+        <div>
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <button id="predict">Predict</button>
+        </div>
+        <p id="result"></p>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
